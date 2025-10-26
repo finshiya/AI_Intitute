@@ -1,958 +1,970 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Insight Technology - Empowering the Next Generation of Innovators
-    </title>
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <link href="./assets/style/style.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    QBix AI CODING LABS
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Add this in your <head> -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
-  </head>
+  <link href="./assets/style/style.css" rel="stylesheet" />
 
-  <body class="bg-slate-950 text-white overflow-x-hidden">
-    <!-- Header -->
-    <header
-      class="fixed w-full top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-blue-500/20"
-    >
-      <nav
-        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center"
-      >
-       <div class="text-[8px] w-[200px] ">
-            <a href="../index.html" class="flex flex-col items-center">
-          <img src="./assets/images/logo2.png" width="80%" />
-          <p class="px-1 text-black bg-yellow-300">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+</head>
+
+<body class="bg-slate-950 text-white overflow-x-hidden">
+  <!-- Header -->
+  <header class="fixed w-full top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-yellow-500/20">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <div class="text-[8px] w-[200px]">
+        <a href="../index.html" class="flex flex-col items-center">
+          <img src="./assets/images/QBix_AICODINGLABS__ver_2_1-removebg-preview.png" width="50%" />
+          <!-- <p class="px-1 text-black bg-yellow-300">
             TRAINING | INNOVATION | DEVELOPMENT
+          </p> -->
+        </a>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex gap-8">
+        <a href="#home" class="hover:text-yellow-500 transition-smooth">Home</a>
+        <a href="#about" class="hover:text-yellow-400 transition-smooth">About</a>
+        <a href="#courses" class="hover:text-yellow-500 transition-smooth">Courses</a>
+        <a href="#partners" class="hover:text-yellow-500 transition-smooth">Partner Us</a>
+        <a href="#contact" class="hover:text-yellow-500 transition-smooth">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden" onclick="toggleMenu()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu md:hidden bg-slate-900 border-t border-yellow-500/20">
+      <div class="px-4 py-4 space-y-3">
+        <a href="#home" class="block hover:text-yellow-500 transition-smooth">Home</a>
+        <a href="#about" class="block hover:text-yellow-500 transition-smooth">About</a>
+        <a href="#courses" class="block hover:text-yellow-500 transition-smooth">Courses</a>
+        <a href="#partners" class="block hover:text-yellow-500 transition-smooth">Partner Us</a>
+        <a href="#contact" class="block hover:text-yellow-500 transition-smooth">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Full Background Video -->
+  <section id="home" class="hero-video-bg min-h-screen relative flex justify-center items-center px-4 sm:px-6 lg:px-8">
+    <video src="./assets/images/QBix_home_trimmed.mp4" autoplay muted loop playsinline
+      class="absolute inset-0 w-full h-full object-cover"></video>
+
+    <!-- Dark overlay for readability -->
+    <div class="absolute inset-0 bg-black/40"></div>
+
+    <!-- Content overlay -->
+    <div class="relative z-10 text-center max-w-2xl space-y-4 mt-20">
+      <h1 class="text-5xl md:text-6xl font-bold leading-tight animate-fade-in-up">
+        Empowering the Next Generation of
+        <span class="gradient-text">Innovators</span>
+      </h1>
+      <p class="text-xl text-gray-300 animate-fade-in-up stagger-1">
+        Innovating the Future.
+      </p>
+      <div class="flex justify-center gap-4 animate-fade-in-up stagger-2">
+        <button
+          class="px-8 py-3 bg-yellow-500  rounded-lg font-semibold transition-transform transform hover:scale-105">
+          Explore Courses
+        </button>
+        <button
+          class="px-8 py-3 border-2 border-yellow-500 hover:bg-yellow-500/10 rounded-lg font-semibold transition-transform">
+          Join Now
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+
+  <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-900/30 to-slate-900/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="mb-20">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+          <div class="md:col-span-5 relative animate-slide-in-left">
+            <div class="relative">
+              <div class="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-cyan-500/20 rounded-2xl blur-3xl">
+              </div>
+              <img src="./assets/images/banner-img.png" alt="Insight Technology"
+                class="relative w-full h-full object-cover rounded-2xl shadow-2xl" />
+            </div>
+          </div>
+
+          <!-- Right Content -->
+          <div class="md:col-span-7 animate-fade-in-up">
+            <div class="space-y-6">
+              <div>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-2">
+                  About <span class="gradient-text">QBix AI Coding Labs</span>
+                </h2>
+                <div class="h-1 w-20 bg-gradient-to-r from-yellow-500 rounded-full"></div>
+              </div>
+
+              <p class="text-gray-300 text-lg leading-relaxed mb-4">
+                QBix AiCodingLabs, a division of Insight Technology, is a
+                next-generation learning and innovation hub focused on
+                building AI-driven digital intelligence for the modern world.
+                We specialize in
+                <span class="font-semibold text-yellow-400">Artificial Intelligence, Data Science, Machine Learning,
+                  Full-Stack Development, and Digital Media Creations</span>
+                — empowering learners to turn ideas into intelligent,
+                scalable, and creative solutions.
+              </p>
+              <p class="text-gray-300 text-lg leading-relaxed">
+                At QBix AiCodingLabs, we go beyond theory. Every learner
+                experiences a
+                <span class="font-semibold text-yellow-400">hands-on, project-oriented approach</span>, combining
+                coding,
+                analytics, and real-world application
+                development with creative digital production. Our unique
+                integration of AI and digital media helps students explore how
+                intelligence can shape content creation, automation,
+                storytelling, and next-generation user experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="h-px bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent my-16"></div>
+      <div>
+        <div class="grid md:grid-cols-12 gap-8 mb-12">
+          <div
+            class="md:col-span-4 p-8 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up stagger-1">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="#fabb00" class="w-8 h-8">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 21h6" />
+                </svg>
+              </div>
+
+              <h3 class="text-2xl font-bold text-[#fabb00]">What We Do</h3>
+            </div>
+
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex gap-3">
+                <span class="text-[#fabb00] font-bold">•</span>
+                <span>Train and mentor students in AI, ML, and Data Science technologies</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-[#fabb00] font-bold">•</span>
+                <span>Build solid foundations in Full-Stack Web and App Development (Python, Django, MERN)</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-[#fabb00] font-bold">•</span>
+                <span>Integrate Digital Media Creations and AI for smarter content workflows</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-[#fabb00] font-bold">•</span>
+                <span>Develop industry-ready projects that combine technology and creativity</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-[#fabb00] font-bold">•</span>
+                <span>Offer internships and real project exposure under Insight Technology's ecosystem</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="md:col-span-8 grid gap-8">
+            <section class="about-section">
+              <div class="about-container">
+                <div class="about-content">
+                  <h2>Sunil Kumar G.K</h2>
+                  <p class="title">Technology Strategist | IT Training Head | Entrepreneur</p>
+
+                  <div class="credentials">
+                    <span class="credential-badge">MSc (Computer Science)</span>
+                    <span class="credential-badge">PGDCA (ER&DCI)</span>
+                    <span class="credential-badge">MCSE Certified</span>
+                    <span class="credential-badge">Electronic Security Systems</span>
+                  </div>
+                </div>
+
+
+                <div class="about-image">
+                  <div class="about-image-content">
+                    <!-- <div class="initials">SK</div> -->
+                    <img src="./assets/images/user-icon.png">
+                    <!-- <p>Technology Strategist</p>
+                    <p style="margin-top: 20px; font-size: 13px; color: #64748b;">Expertise in AI Integration, Software
+                      Engineering & Educational Leadership</p> -->
+                  </div>
+                </div>
+              </div>
+
+
+              <p class="my-5">With over <span class="text-yellow-400">23 years of experience</span> in technology
+                training, software
+                development, and educational leadership, Sunil Kumar G.K has been instrumental in bridging the gap
+                between emerging technologies and real-world learning outcomes. His expertise spans across AI
+                integration in education, software engineering, and institutional development.
+              </p>
+              <div class="about-feat">
+                <div class="experience-highlight">
+                  <strong>Founder</strong>
+                  <p>Insight Technology, Perambraa</p>
+                </div>
+
+                <div class="experience-highlight">
+                  <strong>Ex. Director</strong>
+                  <p>Frugal Scientific Pvt. Ltd.</p>
+                </div>
+
+                <div class="experience-highlight">
+                  <strong>Ex. Training Head</strong>
+                  <p>FSD Academy, Kozhikode</p>
+                </div>
+                <div class="experience-highlight">
+                  <strong>Ex. Managing Partner</strong>
+                  <p> Global Academy, Quilandy</p>
+                </div>
+                <div class="experience-highlight">
+                  <strong>Software Engineer</strong>
+                  <p> Beams IT Solutions, Dubai, UAE</p>
+                </div>
+                <div class="experience-highlight">
+                  <strong>Sr. Software Faculty</strong>
+                  <p> CDIT | CDAC | APTECH </p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- Vision & Mission Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+
+          <!-- Vision -->
+          <div
+            class="p-6 rounded-lg bg-slate-900/50 border border-yellow-500/20 hover:border-yellow-500/50 transition-all">
+            <div class="flex items-center gap-3 mb-6">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#fabb00"
+                class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M1.5 12s3.75-7.5 10.5-7.5S22.5 12 22.5 12s-3.75 7.5-10.5 7.5S1.5 12 1.5 12z" />
+                <circle cx="12" cy="12" r="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <h3 class="text-2xl font-bold text-yellow-400">Our Vision</h3>
+            </div>
+
+            <p class="text-gray-300 leading-relaxed">
+              To create a new generation of tech professionals who can combine data intelligence, programming
+              excellence, and creative innovation — shaping the future of digital industries.
+            </p>
+          </div>
+
+          <!-- Mission -->
+          <div
+            class="p-6 rounded-lg bg-slate-900/50 border border-yellow-500/20 hover:border-yellow-500/50 transition-all">
+            <div class="flex items-center gap-3 mb-6">
+              <!-- Target Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#fabb00"
+                class="w-8 h-8">
+                <circle cx="12" cy="12" r="9" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="12" cy="12" r="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v3m0 12v3m9-9h-3M6 12H3" />
+              </svg>
+              <h3 class="text-2xl font-bold text-yellow-400">Our Mission</h3>
+            </div>
+
+            <p class="text-gray-300 leading-relaxed">
+              To provide a learning platform that bridges education and real-world innovation, helping individuals
+              gain practical experience in AI, software engineering, and intelligent digital media solutions.
+            </p>
+          </div>
+
+        </div>
+
+  </section>
+
+
+
+
+
+
+  <!-- Courses Section -->
+  <section id="courses" class="py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center animate-fade-in-up">
+        Courses
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div
+          class="glow-border rounded-2xl shadow-lg p-6 hover:border-indigo-400/50 hover:shadow-2xl transition-transform transform hover:-translate-y-2 flex flex-col">
+
+          <div
+            class="w-[100%] h-[200px] bg-gradient-to-r from-blue-400 to-indigo-500 rounded-lg flex items-center justify-center mb-4 text-white">
+
+            <img class="w-[100%] h-[100%] object-cover" src="./assets/images/Digital-Media-Creations.png">
+          </div>
+
+          <h3 class="text-xl font-semibold mb-2">Digital Media Creations</h3>
+          <p class="text-gray-400 mb-4">
+            Learn to create stunning digital content using AI tools.
           </p>
+<div class="flex justify-between items-center text-gray-300 mb-4 text-sm">
+  <div class="flex items-center gap-2">
+    <!-- Calendar Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+      stroke-width="1.8" stroke="#fabb00" class="w-5 h-5">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+    </svg>
+    <span>4 Months</span>
+  </div>
+
+  <div class="flex items-center gap-2">
+    <!-- Laptop Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+      stroke-width="1.8" stroke="#fabb00" class="w-5 h-5">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M3 5h18a1 1 0 011 1v11H2V6a1 1 0 011-1zm-1 13h20v2H2v-2z" />
+    </svg>
+    <span>Online / Offline</span>
+  </div>
+</div>
+
+
+          <a href="./courses/digital-media-course.html" class="block w-full mt-auto">
+            <button
+              class="w-full bg-gradient-to-r from-blue-400 to-indigo-500 text-white px-4 py-2 rounded-lg font-semibold hover:from-indigo-500 hover:to-blue-400 transition-all">
+              Learn More
+            </button>
           </a>
         </div>
 
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex gap-8">
-          <a href="#home" class="hover:text-blue-400 transition-smooth">Home</a>
-          <a href="#about" class="hover:text-blue-400 transition-smooth"
-            >About</a
-          >
-          <a href="#courses" class="hover:text-blue-400 transition-smooth"
-            >Courses</a
-          >
-          <a href="#partners" class="hover:text-blue-400 transition-smooth"
-            >Partner Us</a
-          >
-          <a href="#contact" class="hover:text-blue-400 transition-smooth"
-            >Contact</a
-          >
-        </div>
-
-        <!-- Mobile Menu Button -->
-        <button class="md:hidden" onclick="toggleMenu()">
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </button>
-      </nav>
-
-      <!-- Mobile Menu -->
-      <div
-        id="mobileMenu"
-        class="mobile-menu md:hidden bg-slate-900 border-t border-blue-500/20"
-      >
-        <div class="px-4 py-4 space-y-3">
-          <a href="#home" class="block hover:text-blue-400 transition-smooth"
-            >Home</a
-          >
-          <a href="#about" class="block hover:text-blue-400 transition-smooth"
-            >About</a
-          >
-          <a href="#courses" class="block hover:text-blue-400 transition-smooth"
-            >Courses</a
-          >
-          <a
-            href="#partners"
-            class="block hover:text-blue-400 transition-smooth"
-            >Partner Us</a
-          >
-          <a href="#contact" class="block hover:text-blue-400 transition-smooth"
-            >Contact</a
-          >
-        </div>
-      </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section
-      id="home"
-      class="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 pt-32 px-4 sm:px-6 lg:px-8 flex items-center"
-    >
-      <div
-        class="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center"
-      >
-        <div class="space-y-8">
-          <h1
-            class="text-5xl md:text-6xl font-bold leading-tight animate-fade-in-up"
-          >
-            Empowering the Next Generation of
-            <span class="gradient-text">Innovators</span>
-          </h1>
-          <p class="text-xl text-gray-300 animate-fade-in-up stagger-1">
-            Learn, Create. Lead.
-          </p>
-          <div class="flex gap-4 animate-fade-in-up stagger-2">
-            <button
-              class="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition-smooth transform hover:scale-105"
-            >
-              Explore Courses
-            </button>
-            <button
-              class="px-8 py-3 border-2 border-blue-500 hover:bg-blue-500/10 rounded-lg font-semibold transition-smooth"
-            >
-              Join Now
-            </button>
-          </div>
-        </div>
-        <div class="hidden md:block relative h-96">
-          <div
-            class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl blur-3xl"
-          ></div>
-          <img
-            src="./assets/images/banner-img.png"
-            alt="Tech professionals"
-            class="relative w-full h-full object-cover rounded-2xl animate-float"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-
-<section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
-  <div class="max-w-7xl mx-auto">
-    <div class="grid md:grid-cols-12 gap-12 items-center">
-
-      <!-- Left Image (4 columns) -->
-      <div class="md:col-span-5 relative animate-slide-in-left flex flex-col justify-center h-full">
-        <div class="relative">
-          <div class="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-2xl blur-3xl"></div>
-          <img
-            src="./assets/images/banner-img.png"
-            alt="About"
-            class="relative w-full h-full object-cover rounded-2xl"
-          />
-        </div>
-
-        <!-- Stats -->
-        <div class="grid grid-cols-2 gap-4 pt-6">
-          <div class="glow-border p-4 rounded-lg text-center">
-            <div class="text-3xl font-bold text-blue-400">500+</div>
-            <div class="text-sm text-gray-400">Students Trained</div>
-          </div>
-          <div class="glow-border p-4 rounded-lg text-center">
-            <div class="text-3xl font-bold text-blue-400">95%</div>
-            <div class="text-sm text-gray-400">Placement Rate</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Content (8 columns) -->
-      <div class="md:col-span-7 animate-fade-in-up flex flex-col justify-center text-justify">
-        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-          About <br>
-          <span class="gradient-text">Insight Technology</span>
-        </h2>
-
-        <p class="text-gray-300 text-lg leading-[25px] mb-4">
-          Founded on
-          <span class="font-semibold text-blue-400">11 August 2011</span>,
-          Insight Technology is a leading IT Training and Development Centre
-          dedicated to bridging the gap between academia and industry. We
-          specialize in cutting-edge, industry-relevant training in areas
-          such as
-          <span class="text-blue-400 font-medium">
-            Full Stack Web Development, Mobile Application Development
-          </span>, and other emerging technologies.
-        </p>
-
-        <p class="text-gray-300 text-lg leading-[25px] mb-4">
-          With over a decade of experience, we have collaborated with
-          reputed organizations—including
-          <span class="text-blue-400 font-medium">Frugal Scientific Pvt. Ltd.</span>
-          and
-          <span class="text-blue-400 font-medium">Fullstack Developer Academy</span>
-          —to deliver real-world software solutions and high-quality
-          training programs. Our hands-on, project-based approach ensures
-          that learners gain practical skills aligned with current industry
-          demands.
-        </p>
-
-        <p class="text-gray-300 text-lg leading-[25px]">
-          At Insight Technology, we are committed to empowering the next
-          generation of developers and innovators through real-world
-          learning experiences, expert mentorship, and a
-          <span class="text-blue-400 font-medium">future-ready curriculum</span>
-          that keeps pace with the evolving tech landscape.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-    <!-- Courses Section -->
-    <section id="courses" class="py-20 px-4 sm:px-6 lg:px-8">
-      <div class="max-w-7xl mx-auto">
-        <h2
-          class="text-4xl md:text-5xl font-bold mb-12 text-center animate-fade-in-up"
-        >
-          Courses
-        </h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Course Card -->
-          <div
-            class="glow-border rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-transform transform hover:-translate-y-2 flex flex-col"
-          >
-            <!-- Icon -->
-            <div
-              class="w-12 h-12 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-lg flex items-center justify-center mb-4 text-white"
-            >
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z"
-                ></path>
-              </svg>
-            </div>
-
-            <!-- Course Info -->
-            <h3 class="text-xl font-semibold mb-2">Digital Media Creations</h3>
-            <p class="text-gray-400 mb-4">
-              Learn to create stunning digital content using AI tools.
-            </p>
-
-            <!-- Duration & Mode -->
-            <div
-              class="flex justify-between items-center text-gray-300 mb-4 text-sm"
-            >
-              <span>📅 4 Months</span>
-              <span>💻 Online / Offline</span>
-            </div>
-            <!-- Learn More Button -->
-            <a
-              href="./courses/digital-media-course.html"
-              class="block w-full mt-auto"
-            >
-              <button
-                class="w-full bg-gradient-to-r from-blue-400 to-indigo-500 text-white px-4 py-2 rounded-lg font-semibold hover:from-indigo-500 hover:to-blue-400 transition-all"
-              >
-                Learn More
-              </button>
-            </a>
-          </div>
-
-          <!-- Course Card 2 -->
-          <div
-            class="glow-border rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-transform transform hover:-translate-y-2 flex flex-col"
-          >
-            <div
-              class="w-12 h-12 bg-gradient-to-r from-pink-400 to-red-500 rounded-lg flex items-center justify-center mb-4 text-white"
-            >
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M13 7H7v6h6V7z"></path>
-                <path
-                  fill-rule="evenodd"
-                  d="M7 2a1 1 0 012 0v1h2V2a1 1 0 112 0v1h2V2a1 1 0 112 0v1h1a2 2 0 012 2v1h1a1 1 0 110 2h-1v2h1a1 1 0 110 2h-1v2h1a1 1 0 110 2h-1v1a2 2 0 01-2 2h-1v1a1 1 0 11-2 0v-1h-2v1a1 1 0 11-2 0v-1H7a2 2 0 01-2-2v-1H4a1 1 0 110-2h1V9H4a1 1 0 110-2h1V7H4a1 1 0 110-2h1V4a2 2 0 012-2h1V2z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">AI Powered Filmmaking</h3>
-            <p class="text-gray-400 mb-4">
-              Master AI tools for creating short films and video content.
-            </p>
-            <div
-              class="flex justify-between items-center text-gray-300 mb-4 text-sm"
-            >
-              <span>📅 6 Months</span>
-              <span>💻 Hybrid</span>
-            </div>
-             <a
-              href="./courses/digital-media-course.html"
-              class="block w-full mt-auto"
-            >
-            <button
-              class="w-full bg-gradient-to-r from-pink-400 to-red-500 text-white px-4 py-2 rounded-lg font-semibold hover:from-red-500 hover:to-pink-400 transition-all"
-            >
-              Learn More
-            </button>
-             </a>
-          </div>
-
-          <div
-            class="glow-border rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-transform transform hover:-translate-y-2 flex flex-col"
-          >
-            <div
-              class="w-12 h-12 bg-gradient-to-r from-green-400 to-teal-500 rounded-lg flex items-center justify-center mb-4 text-white"
-            >
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z"
-                ></path>
-                <path
-                  fill-rule="evenodd"
-                  d="M3 10a1 1 0 011-1h12a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zm5-3a1 1 0 100-2 1 1 0 000 2z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">
-              Generative AI & Prompt Engineering
-            </h3>
-            <p class="text-gray-400 mb-4">
-              Master AI prompts to generate content quickly and efficiently.
-            </p>
-            <div
-              class="flex justify-between items-center text-gray-400 mb-4 text-sm"
-            >
-              <span>📅 3 Months</span>
-              <span>💻 Online / Hybrid</span>
-            </div>
-             <a
-              href="./courses/digital-media-course.html"
-              class="block w-full mt-auto"
-            >
-            <button
-              class="w-full bg-gradient-to-r from-green-400 to-teal-500 text-white px-4 py-2 rounded-lg font-semibold hover:from-teal-500 hover:to-green-400 transition-all"
-            >
-              Learn More
-            </button>
-             </a>
-          </div>
-
-          <!-- Course Card 6 -->
-          <div
-            class="glow-border rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-transform transform hover:-translate-y-2 flex flex-col"
-          >
-            <div
-              class="w-12 h-12 bg-gradient-to-r from-purple-400 to-pink-500 rounded-lg flex items-center justify-center mb-4 text-white"
-            >
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  d="M10.5 1.5H5.75A2.25 2.25 0 003.5 3.75v12.5A2.25 2.25 0 005.75 18.5h8.5a2.25 2.25 0 002.25-2.25V6.5m-11-5v5h5m-5-5L10.5 6.5"
-                ></path>
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Full Stack Development</h3>
-            <p class="text-gray-400 mb-4">
-              Learn MERN stack, Python, and build professional projects.
-            </p>
-            <div
-              class="flex justify-between items-center text-gray-300 mb-4 text-sm"
-            >
-              <span>📅 6 Months</span>
-              <span>💻 Online / Offline</span>
-            </div>
-             <a
-              href="./courses/digital-media-course.html"
-              class="block w-full mt-auto"
-            >
-            <button
-              class="w-full bg-gradient-to-r from-purple-400 to-pink-500 text-white px-4 py-2 rounded-lg font-semibold hover:from-pink-500 hover:to-purple-400 transition-all"
-            >
-              Learn More
-            </button>
-             </a>
-          </div>
-
-          <!-- Repeat similarly for other courses -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Partner With Us Section -->
-    <section id="partners" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
-      <div class="max-w-7xl mx-auto">
-        <!-- Header -->
+        <!-- Course Card 2 -->
         <div
-          class="mb-16 animate-fade-in-up flex flex-col items-center align-center"
-        >
-          <h2 class="text-4xl md:text-5xl font-bold mb-4">
-            Partner With <span class="gradient-text">Insight Technology</span>
-          </h2>
-          <p class="text-xl text-gray-300 max-w-2xl">
-            <span class="font-semibold"
-              >Empowering Growth. Building Futures. Together.</span
-            >
+          class="glow-border rounded-2xl shadow-lg p-6 hover:border-red-400/50 hover:shadow-2xl transition-transform transform hover:-translate-y-2 flex flex-col">
+
+          <div
+            class="w-[100%] h-[200px] bg-gradient-to-r  from-blue-400 to-indigo-500 rounded-lg flex items-center justify-center mb-4 text-white">
+
+            <img class="w-[100%] h-[100%] object-cover" src="./assets/images/AI-Powered-Filmmaking.png">
+          </div>
+          <h3 class="text-xl font-semibold mb-2">AI Powered Filmmaking</h3>
+          <p class="text-gray-400 mb-4">
+            Master AI tools for creating short films and video content.
           </p>
-          <p class="text-gray-400 mt-4 max-w-3xl leading-relaxed text-center">
-            At Insight Technology, we believe collaboration drives innovation.
-            We're open to partnerships that create real-world impact — from
-            talent development to digital transformation and project
-            collaborations. Let's join hands to shape the future of technology
-            together.
-          </p>
-        </div>
 
-        <!-- Partnership Cards -->
-        <div class="grid md:grid-cols-3 gap-8 mb-12">
-          <!-- Training Partnerships -->
-          <div
-            class="glow-border p-8 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 stagger-1"
-          >
-            <div
-              class="w-14 h-14 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6"
-            >
-              <svg
-                class="w-7 h-7 text-blue-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M10.5 1.5H5.75A2.25 2.25 0 003.5 3.75v12.5A2.25 2.25 0 005.75 18.5h8.5a2.25 2.25 0 002.25-2.25V6.5m-11-5v5h5m-5-5L10.5 6.5"
-                ></path>
-              </svg>
-            </div>
-            <h3 class="text-2xl font-bold mb-3">Training Partnerships</h3>
-            <p class="text-gray-300 font-semibold mb-4">
-              Empower Your Students with Industry-Ready Skills
-            </p>
-            <p class="text-gray-400 leading-relaxed">
-              Partner with us to bridge the gap between academics and industry.
-              We provide customized, hands-on training programs in Full Stack
-              Development, Mobile App Development, and Emerging Technologies —
-              helping your learners gain the practical expertise today's job
-              market demands.
-            </p>
-          </div>
+          <div class="flex justify-between items-center text-gray-300 mb-4 text-sm">
+  <div class="flex items-center gap-2">
+    <!-- Calendar Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+      stroke-width="1.8" stroke="#fabb00" class="w-5 h-5">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+    </svg>
+    <span>6 Months</span>
+  </div>
 
-          <!-- Digital Media Partnerships -->
-          <div
-            class="glow-border p-8 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 stagger-2"
-          >
-            <div
-              class="w-14 h-14 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6"
-            >
-              <svg
-                class="w-7 h-7 text-blue-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M2 6a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zm12 .5a.5.5 0 11-1 0 .5.5 0 011 0z"
-                ></path>
-              </svg>
-            </div>
-            <h3 class="text-2xl font-bold mb-3">Digital Media Partnerships</h3>
-            <p class="text-gray-300 font-semibold mb-4">
-              Transform Your Brand Digitally
-            </p>
-            <p class="text-gray-400 leading-relaxed">
-              Join forces with us for your digital media and creative
-              requirements — from promotional ads, brand videos, and short films
-              to animations and digital content creation. Our creative team
-              brings your ideas to life with modern design and storytelling that
-              captures attention and builds engagement.
-            </p>
-          </div>
+  <div class="flex items-center gap-2">
+    <!-- Laptop Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+      stroke-width="1.8" stroke="#fabb00" class="w-5 h-5">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M3 5h18a1 1 0 011 1v11H2V6a1 1 0 011-1zm-1 13h20v2H2v-2z" />
+    </svg>
+    <span>Online</span>
+  </div>
+</div>
 
-          <!-- Placement Partnerships -->
-          <div
-            class="glow-border p-8 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 stagger-3"
-          >
-            <div
-              class="w-14 h-14 bg-blue-500/20 rounded-lg flex items-center justify-center mb-6"
-            >
-              <svg
-                class="w-7 h-7 text-blue-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"
-                ></path>
-              </svg>
-            </div>
-            <h3 class="text-2xl font-bold mb-3">Placement Partnerships</h3>
-            <p class="text-gray-300 font-semibold mb-4">
-              Your Next Skilled Resource Awaits
-            </p>
-            <p class="text-gray-400 leading-relaxed">
-              We help companies meet their hiring needs by training and
-              supplying skilled professionals tailored to your technology stack
-              and business goals. Our trained candidates are industry-ready,
-              project-capable, and job-confident — ensuring you get resources
-              that deliver value from day one.
-            </p>
-          </div>
-        </div>
-
-        <!-- CTA Button -->
-        <div class="text-center animate-fade-in-up stagger-4">
-          <a href="#contact">
-           <button
-              class="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition-smooth transform hover:scale-105"
-            >
-              Become a Partner
+          <a href="./courses/digital-media-course.html" class="block w-full mt-auto">
+            <button
+              class="w-full bg-gradient-to-r from-pink-400 to-red-500 text-white px-4 py-2 rounded-lg font-semibold hover:from-red-500 hover:to-pink-400 transition-all">
+              Learn More
             </button>
-            </a>
+          </a>
+        </div>
+
+        <div
+          class="glow-border rounded-2xl shadow-lg p-6 hover:border-teal-400/50 hover:shadow-2xl transition-transform transform hover:-translate-y-2 flex flex-col">
+
+          <div
+            class="w-[100%] h-[200px] bg-gradient-to-r from-blue-400 to-indigo-500 rounded-lg flex items-center justify-center mb-4 text-white">
+            <img class="w-[100%] h-[100%] object-cover" src="./assets/images/Prompt-Engineering.png">
+          </div>
+
+          <h3 class="text-xl font-semibold mb-2">
+            Generative AI & Prompt Engineering
+          </h3>
+          <p class="text-gray-400 mb-4">
+            Master AI prompts to generate content quickly and efficiently.
+          </p>
+   
+                    <div class="flex justify-between items-center text-gray-300 mb-4 text-sm">
+  <div class="flex items-center gap-2">
+    <!-- Calendar Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+      stroke-width="1.8" stroke="#fabb00" class="w-5 h-5">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+    </svg>
+    <span>8 Months</span>
+  </div>
+
+  <div class="flex items-center gap-2">
+    <!-- Laptop Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+      stroke-width="1.8" stroke="#fabb00" class="w-5 h-5">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M3 5h18a1 1 0 011 1v11H2V6a1 1 0 011-1zm-1 13h20v2H2v-2z" />
+    </svg>
+    <span>Hybrid</span>
+  </div>
+</div>
+          <a href="./courses/digital-media-course.html" class="block w-full mt-auto">
+            <button
+              class="w-full bg-gradient-to-r from-green-400 to-teal-500 text-white px-4 py-2 rounded-lg font-semibold hover:from-teal-500 hover:to-green-400 transition-all">
+              Learn More
+            </button>
+          </a>
+        </div>
+
+        <!-- Course Card 6 -->
+        <div
+          class="glow-border rounded-2xl shadow-lg p-6 hover:border-pink-400/50 hover:shadow-2xl transition-transform transform hover:-translate-y-2 flex flex-col">
+
+          <div
+            class="w-[100%] h-[200px] bg-gradient-to-r from-blue-400 to-indigo-500 rounded-lg flex items-center justify-center mb-4 text-white">
+            <img class="w-[100%] h-[100%] object-cover" src="./assets/images/Full-Stack-Development.png">
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Full Stack Development</h3>
+          <p class="text-gray-400 mb-4">
+            Learn MERN stack, Python, and build professional projects.
+          </p>
+                   <div class="flex justify-between items-center text-gray-300 mb-4 text-sm">
+  <div class="flex items-center gap-2">
+    <!-- Calendar Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+      stroke-width="1.8" stroke="#fabb00" class="w-5 h-5">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+    </svg>
+    <span>8 Months</span>
+  </div>
+
+  <div class="flex items-center gap-2">
+    <!-- Laptop Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+      stroke-width="1.8" stroke="#fabb00" class="w-5 h-5">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M3 5h18a1 1 0 011 1v11H2V6a1 1 0 011-1zm-1 13h20v2H2v-2z" />
+    </svg>
+    <span>Online</span>
+  </div>
+</div>
+          <a href="./courses/digital-media-course.html" class="block w-full mt-auto">
+            <button
+              class="w-full bg-gradient-to-r from-purple-400 to-pink-500 text-white px-4 py-2 rounded-lg font-semibold hover:from-pink-500 hover:to-purple-400 transition-all">
+              Learn More
+            </button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner With Us Section -->
+  <section id="partners" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
+    <div class="max-w-7xl mx-auto">
+      <!-- Header -->
+      <div class="mb-16 animate-fade-in-up flex flex-col items-center align-center text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4">
+          Partner With <span class="gradient-text">Insight Technology</span>
+        </h2>
+        <p class="text-xl text-gray-300 max-w-2xl">
+          <span class="font-semibold">Empowering Growth. Building Futures. Together.</span>
+        </p>
+        <p class="text-gray-400 mt-4 max-w-3xl leading-relaxed">
+          At Insight Technology, we believe collaboration drives innovation.
+          We're open to partnerships that create real-world impact — from
+          talent development to digital transformation and project
+          collaborations. Let's join hands to shape the future of technology
+          together.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+
+        <div class="glow-border p-8 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 stagger-2">
+          <div class="flex justify-center mb-6">
+            <img src="./assets/images/rr.png" alt="Digital Media Partnership"
+              class="w-[100%] h-36 object-cover rounded-lg shadow-md" />
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Digital Media Partnerships</h3>
+          <p class="text-gray-300 font-semibold mb-4">
+            Transform Your Brand Digitally
+          </p>
+          <p class="text-gray-400 leading-relaxed">
+            Join forces with us for your digital media and creative
+            requirements — from promotional ads, brand videos, and short films
+            to animations and digital content creation. Our creative team
+            brings your ideas to life with modern design and storytelling that
+            captures attention and builds engagement.
+          </p>
+        </div>
+
+
+        <div class="glow-border p-8 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 stagger-1">
+          <div class="flex justify-center mb-6">
+            <img src="./assets/images/Gemini_Generated_Image_tis058tis058tis0.png" alt="Training Partnership"
+              class="w-[100%] h-36 object-cover rounded-lg shadow-md" />
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Training Partnerships</h3>
+          <p class="text-gray-300 font-semibold mb-4">
+            Empower Your Students with Industry-Ready Skills
+          </p>
+          <p class="text-gray-400 leading-relaxed">
+            Partner with us to bridge the gap between academics and industry.
+            We provide customized, hands-on training programs in Full Stack
+            Development, Mobile App Development, and Emerging Technologies —
+            helping your learners gain the practical expertise today's job
+            market demands.
+          </p>
+        </div>
+
+
+        <!-- Placement Partnerships -->
+        <div class="glow-border p-8 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 stagger-3">
+          <div class="flex justify-center mb-6">
+            <img src="./assets/images/dd.png" alt="Placement Partnership"
+              class="w-[100%] h-36 object-cover rounded-lg shadow-md" />
+          </div>
+          <h3 class="text-2xl font-bold mb-3">Placement Partnerships</h3>
+          <p class="text-gray-300 font-semibold mb-4">
+            Your Next Skilled Resource Awaits
+          </p>
+          <p class="text-gray-400 leading-relaxed">
+            We help companies meet their hiring needs by training and
+            supplying skilled professionals tailored to your technology stack
+            and business goals. Our trained candidates are industry-ready,
+            project-capable, and job-confident — ensuring you get resources
+            that deliver value from day one.
+          </p>
         </div>
       </div>
-    </section>
 
-    <!-- Collaboration Section -->
-    <section
-      id="collaboration"
-      class="relative py-20 px-4 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat flex items-center justify-center"
-      style="
+      <!-- CTA Button -->
+      <div class="text-center animate-fade-in-up stagger-4">
+        <a href="#contact">
+          <button class="px-8 py-3 bg-yellow-500  rounded-lg font-semibold transition-smooth transform hover:scale-105">
+            Become a Partner
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Collaboration Section -->
+  <section id="collaboration"
+    class="relative py-20 px-4 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat flex items-center justify-center" style="
         background-image: linear-gradient(
             rgba(15, 23, 42, 0.7),
             rgba(15, 23, 42, 0.7)
           ),
           url('./assets/images/bg-img.png');
-      "
-    >
-      <div class="max-w-4xl mx-auto text-center space-y-8 text-gray-300">
-        <h2 class="text-4xl md:text-5xl font-bold">
-          Let's <span class="gradient-text">Collaborate!</span>
-        </h2>
+      ">
+    <div class="max-w-4xl mx-auto text-center space-y-8 text-gray-300">
+      <h2 class="text-4xl md:text-5xl font-bold">
+        Let's <span class="gradient-text">Collaborate!</span>
+      </h2>
 
-        <p class="text-xl leading-relaxed">
-          Whether you're an educational institution, a corporate firm, or a
-          creative studio, we're ready to collaborate.
+      <p class="text-xl leading-relaxed">
+        Whether you're an educational institution, a corporate firm, or a
+        creative studio, we're ready to collaborate.
+      </p>
+
+      <div class="space-y-4 text-lg">
+        <p>
+          🎓
+          <span class="font-semibold">Educational Institutions:</span> Enhance
+          your curriculum with industry-relevant training
         </p>
-
-        <div class="space-y-4 text-lg">
-          <p>
-            🎓
-            <span class="font-semibold">Educational Institutions:</span> Enhance
-            your curriculum with industry-relevant training
-          </p>
-          <p>
-            🏢 <span class="font-semibold">Corporate Firms:</span> Upskill your
-            workforce with cutting-edge technology programs
-          </p>
-          <p>
-            🎨 <span class="font-semibold">Creative Studios:</span> Collaborate
-            on innovative digital media projects
-          </p>
-        </div>
-
-        <p class="text-xl leading-relaxed font-semibold">
-          Contact us today to explore partnership opportunities and grow
-          together with Insight Technology.
+        <p>
+          🏢 <span class="font-semibold">Corporate Firms:</span> Upskill your
+          workforce with cutting-edge technology programs
         </p>
-
-         <a href="#contact">
-           <button
-              class="px-8 mt-5 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition-smooth transform hover:scale-105"
-            >
-              Get In Touch
-            </button>
-            </a>
-        </div>
+        <p>
+          🎨 <span class="font-semibold">Creative Studios:</span> Collaborate
+          on innovative digital media projects
+        </p>
       </div>
-    </section>
 
-    <!-- Contact Form Section -->
-    <section
-      id="contact"
-      class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-blue-950/10"
-    >
-      <div class="max-w-7xl mx-auto">
-        <h2 class="text-4xl md:text-5xl font-bold text-center mb-10">
+      <p class="text-xl leading-relaxed font-semibold">
+        Contact us today to explore partnership opportunities and grow
+        together with QBix AI coding labs.
+      </p>
+
+      <a href="#contact">
+        <button
+          class="px-8 mt-5 py-3 bg-yellow-500  rounded-lg font-semibold transition-smooth transform hover:scale-105">
           Get In Touch
-        </h2>
+        </button>
+      </a>
+    </div>
+  </section>
 
-        <div class="grid md:grid-cols-2 items-center gap-12 mt-5">
-          <!-- Contact Form -->
-          <div class="animate-slide-in-left">
-            <form id="contactForm" class="space-y-6">
+  <!-- Contact Form Section -->
+  <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-yellow-950/10">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold text-center mb-10">
+        Get In Touch
+      </h2>
+
+      <div class="grid md:grid-cols-2 items-center gap-12 mt-5">
+        <!-- Contact Form -->
+        <div class="animate-slide-in-left">
+          <form id="contactForm" class="space-y-6">
+            <div>
+              <label class="block text-sm font-semibold mb-2">Full Name</label>
+              <input type="text" placeholder="Your Name"
+                class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/30 transition-all"
+                required />
+            </div>
+
+            <!-- Email and Phone in same row -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label class="block text-sm font-semibold mb-2"
-                  >Full Name</label
-                >
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 transition-all"
-                  required
-                />
+                <label class="block text-sm font-semibold mb-2">Email</label>
+                <input type="email" placeholder="your@email.com"
+                  class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/30 transition-all"
+                  required />
               </div>
 
-              <!-- Email and Phone in same row -->
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-sm font-semibold mb-2">Phone</label>
+                <input type="tel" placeholder="+1 (555) 000-0000"
+                  class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/30 transition-all"
+                  required />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold mb-2">Message</label>
+              <textarea placeholder="Your message here..." rows="5"
+                class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/30 transition-all resize-none"
+                required></textarea>
+            </div>
+
+            <button type="submit"
+              class="w-full px-6 py-3 rounded-lg text-white font-semibold bg-yellow-500  transition-colors">
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Address Section -->
+        <div class="animate-slide-in-right space-y-8">
+          <div class="p-8 rounded-lg bg-white/5 border border-white/10">
+            <h3 class="text-2xl font-bold mb-4 text-yellow-400">
+              Contact Information
+            </h3>
+
+            <div class="space-y-6">
+              <div class="flex gap-4">
+                <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </div>
                 <div>
-                  <label class="block text-sm font-semibold mb-2">Email</label>
-                  <input
-                    type="email"
-                    placeholder="your@email.com"
-                    class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 transition-all"
-                    required
-                  />
+                  <h4 class="font-semibold mb-1">Address</h4>
+                  <p class="text-gray-400">
+                    123 Tech Street, Innovation Hub<br />Silicon Valley, CA
+                    94025
+                  </p>
                 </div>
+              </div>
 
+              <div class="flex gap-4">
+                <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path
+                      d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773c.26.559.738 1.382 1.742 2.386 1.004 1.004 1.827 1.482 2.386 1.742l.773-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 4 14.18 4 9.5V5a1 1 0 011-1h2z">
+                    </path>
+                  </svg>
+                </div>
                 <div>
-                  <label class="block text-sm font-semibold mb-2">Phone</label>
-                  <input
-                    type="tel"
-                    placeholder="+1 (555) 000-0000"
-                    class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 transition-all"
-                    required
-                  />
+                  <h4 class="font-semibold mb-1">Phone</h4>
+                  <p class="text-gray-400">
+                    +1 (555) 123-4567<br />+1 (555) 987-6543
+                  </p>
                 </div>
               </div>
 
-              <div>
-                <label class="block text-sm font-semibold mb-2">Message</label>
-                <textarea
-                  placeholder="Your message here..."
-                  rows="5"
-                  class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 transition-all resize-none"
-                  required
-                ></textarea>
+              <div class="flex gap-4">
+                <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-1">Email</h4>
+                  <p class="text-gray-400">
+                    info@QBix.com<br />support@QBixtechnology.com
+                  </p>
+                </div>
               </div>
 
-              <button
-                type="submit"
-                class="w-full px-6 py-3 rounded-lg text-white font-semibold bg-blue-600 hover:bg-blue-700 transition-colors"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-
-          <!-- Address Section (hover effect removed) -->
-          <div class="animate-slide-in-right space-y-8">
-            <div class="p-8 rounded-lg bg-white/5 border border-white/10">
-              <h3 class="text-2xl font-bold mb-4 text-blue-400">
-                Contact Information
-              </h3>
-
-              <div class="space-y-6">
-                <div class="flex gap-4">
-                  <div class="text-2xl text-blue-400">📍</div>
-                  <div>
-                    <h4 class="font-semibold mb-1">Address</h4>
-                    <p class="text-gray-400">
-                      123 Tech Street, Innovation Hub<br />Silicon Valley, CA
-                      94025
-                    </p>
-                  </div>
+              <div class="flex gap-4">
+                <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
+                      clip-rule="evenodd"></path>
+                  </svg>
                 </div>
-
-                <div class="flex gap-4">
-                  <div class="text-2xl text-blue-400">📞</div>
-                  <div>
-                    <h4 class="font-semibold mb-1">Phone</h4>
-                    <p class="text-gray-400">
-                      +1 (555) 123-4567<br />+1 (555) 987-6543
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex gap-4">
-                  <div class="text-2xl text-blue-400">✉️</div>
-                  <div>
-                    <h4 class="font-semibold mb-1">Email</h4>
-                    <p class="text-gray-400">
-                      info@insighttechnology.com<br />support@insighttechnology.com
-                    </p>
-                  </div>
-                </div>
-
-                <div class="flex gap-4">
-                  <div class="text-2xl text-blue-400">🕐</div>
-                  <div>
-                    <h4 class="font-semibold mb-1">Business Hours</h4>
-                    <p class="text-gray-400">
-                      Monday - Friday: 9:00 AM - 6:00 PM<br />Saturday: 10:00 AM
-                      - 4:00 PM<br />Sunday: Closed
-                    </p>
-                  </div>
+                <div>
+                  <h4 class="font-semibold mb-1">Business Hours</h4>
+                  <p class="text-gray-400">
+                    Monday - Friday: 9:00 AM - 6:00 PM<br />Saturday: 10:00 AM
+                    - 4:00 PM<br />Sunday: Closed
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 px-4 sm:px-6 lg:px-8">
-      <div class="max-w-7xl mx-auto">
-        <h2
-          class="text-4xl md:text-5xl font-bold mb-12 text-center animate-fade-in-up"
-        >
-          Testimonials
-        </h2>
-
-        <!-- Slick Carousel -->
-        <div class="testimonial-slider">
-          <!-- Testimonial 1 -->
-          <div class="testimonial-card p-8 rounded-xl shadow-lg mx-4">
-            <p class="text-lg mb-6 italic">"This course changed my career!"</p>
-            <div class="flex items-center gap-4">
-              <img
-                src="./assets/images/user-icon.png"
-                alt="Arev"
-                class="w-12 h-12 rounded-full"
-              />
-              <div>
-                <p class="font-semibold">Arev</p>
-                <p class="text-sm text-gray-500">AI Student</p>
-              </div>
-            </div>
+  <!-- Footer - REDESIGNED -->
+  <footer class="bg-slate-950 border-t border-yellow-500/20 pt-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <!-- Main Footer Content -->
+      <div class="grid md:grid-cols-4 gap-12 mb-12">
+        <!-- Brand Section -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2 mb-4">
+            <img src="./assets/images/QBix_AICODINGLABS__ver_2_1-removebg-preview.png" class="w-[40%]" />
           </div>
+          <p class="text-gray-300 text-sm leading-relaxed">
+            Empowering the next generation of innovators through cutting-edge technology education and real-world
+            innovation.
+          </p>
 
-          <!-- Testimonial 2 -->
-          <div class="testimonial-card p-8 rounded-xl shadow-lg mx-4">
-            <p class="text-lg mb-6 italic">
-              "Practical training and great mentorship!"
-            </p>
-            <div class="flex items-center gap-4">
-              <img
-                src="./assets/images/user-icon.png"
-                alt="Neha"
-                class="w-12 h-12 rounded-full"
-              />
-              <div>
-                <p class="font-semibold">Neha</p>
-                <p class="text-sm text-gray-500">Full Stack Developer</p>
-              </div>
-            </div>
-          </div>
+        </div>
 
-          <!-- Testimonial 3 -->
-          <div class="testimonial-card p-8 rounded-xl shadow-lg mx-4">
-            <p class="text-lg mb-6 italic">
-              "Hands-on projects made learning easy!"
-            </p>
-            <div class="flex items-center gap-4">
-              <img
-                src="./assets/images/user-icon.png"
-                alt="Rahul"
-                class="w-12 h-12 rounded-full"
-              />
-              <div>
-                <p class="font-semibold">Rahul</p>
-                <p class="text-sm text-gray-500">Frontend Engineer</p>
-              </div>
-            </div>
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-bold text-lg mb-6 text-white">Quick Links</h4>
+          <ul class="space-y-3 text-gray-300 text-sm">
+            <li>
+              <a href="#home" class="hover:text-yellow-400 transition-colors flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#about" class="hover:text-yellow-400 transition-colors flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#courses" class="hover:text-yellow-400 transition-colors flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>
+                Courses
+              </a>
+            </li>
+            <li>
+              <a href="#partners" class="hover:text-yellow-400 transition-colors flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>
+                Partners
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Partnerships -->
+        <div>
+          <h4 class="font-bold text-lg mb-6 text-white">Partnerships</h4>
+          <ul class="space-y-3 text-gray-300 text-sm">
+            <li>
+              <a href="#partners" class="hover:text-yellow-400 transition-colors flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>
+                Training
+              </a>
+            </li>
+            <li>
+              <a href="#partners" class="hover:text-yellow-400 transition-colors flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>
+                Digital Media
+              </a>
+            </li>
+            <li>
+              <a href="#partners" class="hover:text-yellow-400 transition-colors flex items-center gap-2">
+                <span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>
+                Placement
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="font-bold text-lg mb-6 text-white">Get In Touch</h4>
+          <ul class="space-y-4 text-gray-300 text-sm">
+            <li class="flex gap-3">
+              <svg class="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+              </svg>
+              <span>info@QBix.com</span>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773c.26.559.738 1.382 1.742 2.386 1.004 1.004 1.827 1.482 2.386 1.742l.773-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 4 14.18 4 9.5V5a1 1 0 011-1h2z">
+                </path>
+              </svg>
+              <span>+1 (555) 123-4567</span>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              <span>Tech Hub, Silicon Valley</span>
+            </li>
+          </ul>
+          <!-- Social Icons -->
+          <div class="flex gap-3 pt-4">
+            <a href="#"
+              class="w-10 h-10 bg-gradient-to-br from-yellow-500/30 to-yellow-600/30 rounded-lg flex items-center justify-center hover:from-yellow-500/50 hover:to-yellow-600/50 transition-all transform hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" fill="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 2C5.68 4 4 5.68 4 7.75v8.5C4 18.32 5.68 20 7.75 20h8.5c2.07 0 3.75-1.68 3.75-3.75v-8.5C20 5.68 18.32 4 16.25 4h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm4.5-3a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg>
+            </a>
+            <a href="#"
+              class="w-10 h-10 bg-gradient-to-br from-yellow-500/30 to-yellow-600/30 rounded-lg flex items-center justify-center hover:from-yellow-500/50 hover:to-yellow-600/50 transition-all transform hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" fill="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.988h-2.54v-2.89h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+              </svg>
+            </a>
+            <a href="#"
+              class="w-10 h-10 bg-gradient-to-br from-yellow-500/30 to-yellow-600/30 rounded-lg flex items-center justify-center hover:from-yellow-500/50 hover:to-yellow-600/50 transition-all transform hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" fill="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.7-.8-2.1-.9C15.6 5 12 5 12 5h0s-3.6 0-6.9.1c-.4 0-1.3.1-2.1.9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.6c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.9.8 2.4.9 1.8.1 7.6.1 7.6.1s3.6 0 6.9-.1c.4 0 1.3-.1 2.1-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.6c0-1.6-.2-3.2-.2-3.2zM10 15V9l5 3-5 3z" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <footer
-      class="bg-slate-950 border-t border-blue-500/20 pt-12  px-4 sm:px-6 lg:px-8"
-    >
-      <div class="max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-4 gap-8 mb-8">
-          <div>
-            <div class="flex items-center gap-2 mb-4">
-              <img src="./assets/images/logo.png" class="w-[50%]" />
-            </div>
-            <p class="text-gray-400 text-sm">
-              Empowering the next generation of innovators.
-            </p>
-            <!-- Social Icons -->
-            <div class="flex gap-4 mt-2">
-              <a
-                href="#"
-                class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center hover:bg-blue-500/40 transition"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M7.75 2h8.5C19.55 2 22 4.45 22 7.75v8.5C22 19.55 19.55 22 16.25 22h-8.5C4.45 22 2 19.55 2 16.25v-8.5C2 4.45 4.45 2 7.75 2zm0 2C5.68 4 4 5.68 4 7.75v8.5C4 18.32 5.68 20 7.75 20h8.5c2.07 0 3.75-1.68 3.75-3.75v-8.5C20 5.68 18.32 4 16.25 4h-8.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm4.5-3a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="#"
-                class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center hover:bg-blue-500/40 transition"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.988h-2.54v-2.89h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                  />
-                </svg>
-              </a>
-              <a
-                href="#"
-                class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center hover:bg-blue-500/40 transition"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M21.8 8s-.2-1.4-.8-2c-.8-.8-1.7-.8-2.1-.9C15.6 5 12 5 12 5h0s-3.6 0-6.9.1c-.4 0-1.3.1-2.1.9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.6c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.8.8 1.9.8 2.4.9 1.8.1 7.6.1 7.6.1s3.6 0 6.9-.1c.4 0 1.3-.1 2.1-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.6c0-1.6-.2-3.2-.2-3.2zM10 15V9l5 3-5 3z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div>
-            <h4 class="font-semibold mb-4">Quick Links</h4>
-            <ul class="space-y-2 text-gray-400 text-sm">
-              <li>
-                <a href="#home" class="hover:text-blue-400 transition">Home</a>
-              </li>
-              <li>
-                <a href="#about" class="hover:text-blue-400 transition"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a href="#courses" class="hover:text-blue-400 transition"
-                  >Courses</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-semibold mb-4">Partnerships</h4>
-            <ul class="space-y-2 text-gray-400 text-sm">
-              <li>
-                <a href="#partners" class="hover:text-blue-400 transition"
-                  >Training</a
-                >
-              </li>
-              <li>
-                <a href="#partners" class="hover:text-blue-400 transition"
-                  >Digital Media</a
-                >
-              </li>
-              <li>
-                <a href="#partners" class="hover:text-blue-400 transition"
-                  >Placement</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-semibold mb-4">Contact</h4>
-            <ul class="space-y-2 text-gray-400 text-sm">
-              <li>Email: info@insighttech.com</li>
-              <li>Phone: +1 (555) 123-4567</li>
-              <li>Location: Tech Hub, City</li>
-            </ul>
-          </div>
-        </div>
-        <div
-          class="border-t border-blue-500/20 py-5 text-center text-gray-400 text-sm"
-        >
-          <p>&copy; 2025 Insight Technology. All rights reserved.</p>
+      <!-- Bottom Footer -->
+      <div class="py-5 border-t border-yellow-500/20  flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-400 text-sm text-center md:text-left">
+          &copy; 2025 QBix AI coding labs. All rights reserved.
+        </p>
+        <div class="flex gap-6 text-gray-400 text-sm">
+          <a href="#" class="hover:text-yellow-400 transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-yellow-400 transition-colors">Terms of Service</a>
+          <a href="#" class="hover:text-yellow-400 transition-colors">Cookie Policy</a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Add JS at the bottom before </body> -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+  <!-- Add JS at the bottom before </body> -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        $(".testimonial-slider").slick({
-          dots: true,
-          infinite: true,
-          speed: 600,
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: false,
-          autoplay: true,
-          autoplaySpeed: 3000,
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 1,
-              },
+  <script>
+    $(document).ready(function () {
+      $(".testimonial-slider").slick({
+        dots: true,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
             },
-          ],
-        });
+          },
+        ],
       });
-    </script>
+    });
+  </script>
 
-    <script>
-      function toggleMenu() {
-        const menu = document.getElementById("mobileMenu");
-        menu.classList.toggle("active");
-      }
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("active");
+    }
 
-      // Smooth scroll for anchor links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute("href"));
-          if (target) {
-            target.scrollIntoView({ behavior: "smooth" });
-            document.getElementById("mobileMenu").classList.remove("active");
-          }
-        });
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+          document.getElementById("mobileMenu").classList.remove("active");
+        }
       });
+    });
 
-      // Intersection Observer for animations
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -100px 0px",
-      };
+    // Intersection Observer for animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -100px 0px",
+    };
 
-      const observer = new IntersectionObserver(function (entries) {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-          }
-        });
-      }, observerOptions);
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = "1";
+          entry.target.style.transform = "translateY(0)";
+        }
+      });
+    }, observerOptions);
 
-      document
-        .querySelectorAll(
-          ".animate-fade-in-up, .animate-slide-in-left, .animate-slide-in-right"
-        )
-        .forEach((el) => {
-          observer.observe(el);
-        });
-    </script>
-  </body>
+    document
+      .querySelectorAll(
+        ".animate-fade-in-up, .animate-slide-in-left, .animate-slide-in-right"
+      )
+      .forEach((el) => {
+        observer.observe(el);
+      });
+  </script>
+</body>
+
 </html>
