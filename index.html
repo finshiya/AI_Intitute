@@ -9,6 +9,10 @@
   </title>
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/images/favIcon.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="./assets/style/style.css" rel="stylesheet" />
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -20,26 +24,21 @@
 <body class="bg-slate-950 text-white overflow-x-hidden">
   <!-- Header -->
   <header class="fixed w-full top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-yellow-500/20">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
       <div class="text-[8px] w-[200px]">
-        <a href="../index.html" class="flex flex-col items-center">
-          <img src="./assets/images/QBix_AICODINGLABS__ver_2_1-removebg-preview.png" width="50%" />
-          <!-- <p class="px-1 text-black bg-yellow-300">
-            TRAINING | INNOVATION | DEVELOPMENT
-          </p> -->
+        <a href="index.html" class="flex flex-col items-center">
+          <img src="./assets/images/QBix_AICODINGLABS__ver_2_1-removebg-preview.png" width="55%" />
         </a>
       </div>
 
-      <!-- Desktop Menu -->
       <div class="hidden md:flex gap-8">
-        <a href="#home" class="hover:text-yellow-500 transition-smooth">Home</a>
+        <a href="index.html" class="hover:text-yellow-500 transition-smooth">Home</a>
         <a href="#about" class="hover:text-yellow-400 transition-smooth">About</a>
         <a href="#courses" class="hover:text-yellow-500 transition-smooth">Courses</a>
         <a href="#partners" class="hover:text-yellow-500 transition-smooth">Partner Us</a>
         <a href="#contact" class="hover:text-yellow-500 transition-smooth">Contact</a>
       </div>
 
-      <!-- Mobile Menu Button -->
       <button class="md:hidden" onclick="toggleMenu()">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -47,10 +46,9 @@
       </button>
     </nav>
 
-    <!-- Mobile Menu -->
     <div id="mobileMenu" class="mobile-menu md:hidden bg-slate-900 border-t border-yellow-500/20">
       <div class="px-4 py-4 space-y-3">
-        <a href="#home" class="block hover:text-yellow-500 transition-smooth">Home</a>
+        <a href="index.html" class="block hover:text-yellow-500 transition-smooth">Home</a>
         <a href="#about" class="block hover:text-yellow-500 transition-smooth">About</a>
         <a href="#courses" class="block hover:text-yellow-500 transition-smooth">Courses</a>
         <a href="#partners" class="block hover:text-yellow-500 transition-smooth">Partner Us</a>
@@ -59,17 +57,16 @@
     </div>
   </header>
 
-  <!-- Hero Section with Full Background Video -->
+  <!-- Hero Section -->
   <section id="home" class="hero-video-bg min-h-screen relative flex justify-center items-center px-4 sm:px-6 lg:px-8">
     <video src="./assets/images/QBix_home_trimmed.mp4" autoplay muted loop playsinline
       class="absolute inset-0 w-full h-full object-cover"></video>
 
-    <!-- Dark overlay for readability -->
+
     <div class="absolute inset-0 bg-black/40"></div>
 
-    <!-- Content overlay -->
     <div class="relative z-10 text-center max-w-2xl space-y-4 mt-20">
-      <h1 class="text-5xl md:text-6xl font-bold leading-tight animate-fade-in-up">
+      <h1 class="text-4xl  md:text-6xl font-bold leading-tight animate-fade-in-up">
         Empowering the Next Generation of
         <span class="gradient-text">Innovators</span>
       </h1>
@@ -78,11 +75,11 @@
       </p>
       <div class="flex justify-center gap-4 animate-fade-in-up stagger-2">
         <button
-          class="px-8 py-3 bg-yellow-500  rounded-lg font-semibold transition-transform transform hover:scale-105">
+          class="px-2 py-3 md:px-8 bg-yellow-500  rounded-lg font-semibold transition-transform transform hover:scale-105">
           Explore Courses
         </button>
         <button
-          class="px-8 py-3 border-2 border-yellow-500 hover:bg-yellow-500/10 rounded-lg font-semibold transition-transform">
+          class="px-2 py-3 md:px-8 border-2 border-yellow-500 hover:bg-yellow-500/10 rounded-lg font-semibold transition-transform">
           Join Now
         </button>
       </div>
@@ -90,8 +87,7 @@
   </section>
 
   <!-- About Section -->
-
-  <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-900/30 to-slate-900/50">
+  <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-900/30 to-slate-900/50">
     <div class="max-w-7xl mx-auto">
       <div class="mb-20">
         <div class="grid md:grid-cols-12 gap-12 items-center">
@@ -142,114 +138,48 @@
 
       <!-- Divider -->
       <div class="h-px bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent my-16"></div>
-      <div>
-        <div class="grid md:grid-cols-12 gap-8 mb-12">
-          <div
-            class="md:col-span-4 p-8 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up stagger-1">
-            <div class="flex items-center gap-3 mb-6">
-              <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-                  stroke="#fabb00" class="w-8 h-8">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 21h6" />
-                </svg>
+
+      <!-- 3 Columns: Profile | Vision+Mission | What We Do -->
+      <div class="grid  md:grid-cols-3 gap-8">
+
+        <!-- Column 1: Profile Section -->
+        <div
+          class="p-5 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+          <section class="about-section">
+            <div class="about-container">
+              <div class="about-content">
+                <h2 class="text-2xl font-bold text-[#fabb00] mb-2">Sunil Kumar G.K</h2>
+                <p class="text-gray-300 text-sm mb-4">Technology Strategist | IT Training Head | Entrepreneur</p>
               </div>
 
-              <h3 class="text-2xl font-bold text-[#fabb00]">What We Do</h3>
+              <div class="about-image">
+                <img src="./assets/images/user-icon.png" alt="Sunil Kumar G.K" />
+              </div>
             </div>
 
-            <ul class="space-y-3 text-gray-300">
-              <li class="flex gap-3">
-                <span class="text-[#fabb00] font-bold">•</span>
-                <span>Train and mentor students in AI, ML, and Data Science technologies</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="text-[#fabb00] font-bold">•</span>
-                <span>Build solid foundations in Full-Stack Web and App Development (Python, Django, MERN)</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="text-[#fabb00] font-bold">•</span>
-                <span>Integrate Digital Media Creations and AI for smarter content workflows</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="text-[#fabb00] font-bold">•</span>
-                <span>Develop industry-ready projects that combine technology and creativity</span>
-              </li>
-              <li class="flex gap-3">
-                <span class="text-[#fabb00] font-bold">•</span>
-                <span>Offer internships and real project exposure under Insight Technology's ecosystem</span>
-              </li>
-            </ul>
-          </div>
+            <div class="experience-highlight"> <strong>Founder</strong>
+              <p>Insight Technology, Perambra</p>
+            </div>
 
-          <div class="md:col-span-8 grid gap-8">
-            <section class="about-section">
-              <div class="about-container">
-                <div class="about-content">
-                  <h2>Sunil Kumar G.K</h2>
-                  <p class="title">Technology Strategist | IT Training Head | Entrepreneur</p>
+            <p class="my-3 text-gray-300 text-sm leading-relaxed">
+              With over <span class="text-yellow-400 font-semibold">23 years of experience</span> in technology
+              training,
+              software development, and educational leadership, Sunil Kumar G.K has been instrumental in bridging the
+              gap
+              between emerging technologies and real-world learning outcomes.
+            </p>
 
-                  <div class="credentials">
-                    <span class="credential-badge">MSc (Computer Science)</span>
-                    <span class="credential-badge">PGDCA (ER&DCI)</span>
-                    <span class="credential-badge">MCSE Certified</span>
-                    <span class="credential-badge">Electronic Security Systems</span>
-                  </div>
-                </div>
-
-
-                <div class="about-image">
-                  <div class="about-image-content">
-                    <!-- <div class="initials">SK</div> -->
-                    <img src="./assets/images/user-icon.png">
-                    <!-- <p>Technology Strategist</p>
-                    <p style="margin-top: 20px; font-size: 13px; color: #64748b;">Expertise in AI Integration, Software
-                      Engineering & Educational Leadership</p> -->
-                  </div>
-                </div>
-              </div>
-
-
-              <p class="my-5">With over <span class="text-yellow-400">23 years of experience</span> in technology
-                training, software
-                development, and educational leadership, Sunil Kumar G.K has been instrumental in bridging the gap
-                between emerging technologies and real-world learning outcomes. His expertise spans across AI
-                integration in education, software engineering, and institutional development.
-              </p>
-              <div class="about-feat">
-                <div class="experience-highlight">
-                  <strong>Founder</strong>
-                  <p>Insight Technology, Perambraa</p>
-                </div>
-
-                <div class="experience-highlight">
-                  <strong>Ex. Director</strong>
-                  <p>Frugal Scientific Pvt. Ltd.</p>
-                </div>
-
-                <div class="experience-highlight">
-                  <strong>Ex. Training Head</strong>
-                  <p>FSD Academy, Kozhikode</p>
-                </div>
-                <div class="experience-highlight">
-                  <strong>Ex. Managing Partner</strong>
-                  <p> Global Academy, Quilandy</p>
-                </div>
-                <div class="experience-highlight">
-                  <strong>Software Engineer</strong>
-                  <p> Beams IT Solutions, Dubai, UAE</p>
-                </div>
-                <div class="experience-highlight">
-                  <strong>Sr. Software Faculty</strong>
-                  <p> CDIT | CDAC | APTECH </p>
-                </div>
-              </div>
-          </div>
+            <div class="credentials space-y-1">
+              <span class="block credential-badge">MSc (Computer Science)</span>
+              <span class="block credential-badge">PGDCA (ER&DCI)</span>
+              <span class="block credential-badge">MCSE Certified</span>
+              <span class="block credential-badge">Electronic Security Systems</span>
+            </div>
+          </section>
         </div>
-        <!-- Vision & Mission Section -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
 
+        <!-- Column 2: Vision and Mission -->
+        <div class="space-y-8 grid ">
           <!-- Vision -->
           <div
             class="p-6 rounded-lg bg-slate-900/50 border border-yellow-500/20 hover:border-yellow-500/50 transition-all">
@@ -262,7 +192,6 @@
               </svg>
               <h3 class="text-2xl font-bold text-yellow-400">Our Vision</h3>
             </div>
-
             <p class="text-gray-300 leading-relaxed">
               To create a new generation of tech professionals who can combine data intelligence, programming
               excellence, and creative innovation — shaping the future of digital industries.
@@ -273,7 +202,6 @@
           <div
             class="p-6 rounded-lg bg-slate-900/50 border border-yellow-500/20 hover:border-yellow-500/50 transition-all">
             <div class="flex items-center gap-3 mb-6">
-              <!-- Target Icon -->
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#fabb00"
                 class="w-8 h-8">
                 <circle cx="12" cy="12" r="9" stroke-linecap="round" stroke-linejoin="round" />
@@ -282,24 +210,49 @@
               </svg>
               <h3 class="text-2xl font-bold text-yellow-400">Our Mission</h3>
             </div>
-
             <p class="text-gray-300 leading-relaxed">
               To provide a learning platform that bridges education and real-world innovation, helping individuals
               gain practical experience in AI, software engineering, and intelligent digital media solutions.
             </p>
           </div>
-
         </div>
+
+        <!-- Column 3: What We Do -->
+        <div
+          class="p-8 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#fabb00"
+                class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 2a7 7 0 00-4 12.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A7 7 0 0012 2z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 21h6" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-[#fabb00]">What We Do</h3>
+          </div>
+
+          <ul class="space-y-3 text-gray-300">
+            <li class="flex gap-3"><span class="text-[#fabb00] font-bold">•</span><span>Train and mentor students in AI,
+                ML, and Data Science technologies</span></li>
+            <li class="flex gap-3"><span class="text-[#fabb00] font-bold">•</span><span>Build solid foundations in
+                Full-Stack Web and App Development (Python, Django, MERN)</span></li>
+            <li class="flex gap-3"><span class="text-[#fabb00] font-bold">•</span><span>Integrate Digital Media
+                Creations and AI for smarter content workflows</span></li>
+            <li class="flex gap-3"><span class="text-[#fabb00] font-bold">•</span><span>Develop industry-ready projects
+                that combine technology and creativity</span></li>
+            <li class="flex gap-3"><span class="text-[#fabb00] font-bold">•</span><span>Offer internships and real
+                project exposure under Insight Technology's ecosystem</span></li>
+          </ul>
+        </div>
+
+      </div>
+
 
   </section>
 
-
-
-
-
-
   <!-- Courses Section -->
-  <section id="courses" class="py-20 px-4 sm:px-6 lg:px-8">
+  <section id="courses" class="py-24 px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
       <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center animate-fade-in-up">
         Courses
@@ -319,38 +272,34 @@
           <p class="text-gray-400 mb-4">
             Learn to create stunning digital content using AI tools.
           </p>
-<div class="flex justify-between items-center text-gray-300 mb-4 text-sm">
-  <div class="flex items-center gap-2">
-    <!-- Calendar Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-      stroke-width="1.8" stroke="#fabb00" class="w-5 h-5">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-    </svg>
-    <span>4 Months</span>
-  </div>
+          <div class="flex justify-between items-center text-gray-300 mb-4 text-sm">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                stroke="#fabb00" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span>4 Months</span>
+            </div>
 
-  <div class="flex items-center gap-2">
-    <!-- Laptop Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-      stroke-width="1.8" stroke="#fabb00" class="w-5 h-5">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M3 5h18a1 1 0 011 1v11H2V6a1 1 0 011-1zm-1 13h20v2H2v-2z" />
-    </svg>
-    <span>Online / Offline</span>
-  </div>
-</div>
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                stroke="#fabb00" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 5h18a1 1 0 011 1v11H2V6a1 1 0 011-1zm-1 13h20v2H2v-2z" />
+              </svg>
+              <span>Online / Offline</span>
+            </div>
+          </div>
 
 
           <a href="./courses/digital-media-course.html" class="block w-full mt-auto">
             <button
               class="w-full bg-gradient-to-r from-blue-400 to-indigo-500 text-white px-4 py-2 rounded-lg font-semibold hover:from-indigo-500 hover:to-blue-400 transition-all">
-              Learn More
+              View More
             </button>
           </a>
         </div>
-
-        <!-- Course Card 2 -->
         <div
           class="glow-border rounded-2xl shadow-lg p-6 hover:border-red-400/50 hover:shadow-2xl transition-transform transform hover:-translate-y-2 flex flex-col">
 
@@ -365,31 +314,29 @@
           </p>
 
           <div class="flex justify-between items-center text-gray-300 mb-4 text-sm">
-  <div class="flex items-center gap-2">
-    <!-- Calendar Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-      stroke-width="1.8" stroke="#fabb00" class="w-5 h-5">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-    </svg>
-    <span>6 Months</span>
-  </div>
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                stroke="#fabb00" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span>6 Months</span>
+            </div>
 
-  <div class="flex items-center gap-2">
-    <!-- Laptop Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-      stroke-width="1.8" stroke="#fabb00" class="w-5 h-5">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M3 5h18a1 1 0 011 1v11H2V6a1 1 0 011-1zm-1 13h20v2H2v-2z" />
-    </svg>
-    <span>Online</span>
-  </div>
-</div>
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                stroke="#fabb00" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 5h18a1 1 0 011 1v11H2V6a1 1 0 011-1zm-1 13h20v2H2v-2z" />
+              </svg>
+              <span>Online / Offline</span>
+            </div>
+          </div>
 
           <a href="./courses/digital-media-course.html" class="block w-full mt-auto">
             <button
               class="w-full bg-gradient-to-r from-pink-400 to-red-500 text-white px-4 py-2 rounded-lg font-semibold hover:from-red-500 hover:to-pink-400 transition-all">
-              Learn More
+              View More
             </button>
           </a>
         </div>
@@ -408,37 +355,33 @@
           <p class="text-gray-400 mb-4">
             Master AI prompts to generate content quickly and efficiently.
           </p>
-   
-                    <div class="flex justify-between items-center text-gray-300 mb-4 text-sm">
-  <div class="flex items-center gap-2">
-    <!-- Calendar Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-      stroke-width="1.8" stroke="#fabb00" class="w-5 h-5">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-    </svg>
-    <span>8 Months</span>
-  </div>
 
-  <div class="flex items-center gap-2">
-    <!-- Laptop Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-      stroke-width="1.8" stroke="#fabb00" class="w-5 h-5">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M3 5h18a1 1 0 011 1v11H2V6a1 1 0 011-1zm-1 13h20v2H2v-2z" />
-    </svg>
-    <span>Hybrid</span>
-  </div>
-</div>
+          <div class="flex justify-between items-center text-gray-300 mb-4 text-sm">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                stroke="#fabb00" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span>8 Months</span>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                stroke="#fabb00" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 5h18a1 1 0 011 1v11H2V6a1 1 0 011-1zm-1 13h20v2H2v-2z" />
+              </svg>
+              <span>Online / Offline</span>
+            </div>
+          </div>
           <a href="./courses/digital-media-course.html" class="block w-full mt-auto">
             <button
               class="w-full bg-gradient-to-r from-green-400 to-teal-500 text-white px-4 py-2 rounded-lg font-semibold hover:from-teal-500 hover:to-green-400 transition-all">
-              Learn More
+              View More
             </button>
           </a>
         </div>
-
-        <!-- Course Card 6 -->
         <div
           class="glow-border rounded-2xl shadow-lg p-6 hover:border-pink-400/50 hover:shadow-2xl transition-transform transform hover:-translate-y-2 flex flex-col">
 
@@ -450,31 +393,29 @@
           <p class="text-gray-400 mb-4">
             Learn MERN stack, Python, and build professional projects.
           </p>
-                   <div class="flex justify-between items-center text-gray-300 mb-4 text-sm">
-  <div class="flex items-center gap-2">
-    <!-- Calendar Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-      stroke-width="1.8" stroke="#fabb00" class="w-5 h-5">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-    </svg>
-    <span>8 Months</span>
-  </div>
+          <div class="flex justify-between items-center text-gray-300 mb-4 text-sm">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                stroke="#fabb00" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span>8 Months</span>
+            </div>
 
-  <div class="flex items-center gap-2">
-    <!-- Laptop Icon -->
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-      stroke-width="1.8" stroke="#fabb00" class="w-5 h-5">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M3 5h18a1 1 0 011 1v11H2V6a1 1 0 011-1zm-1 13h20v2H2v-2z" />
-    </svg>
-    <span>Online</span>
-  </div>
-</div>
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                stroke="#fabb00" class="w-5 h-5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 5h18a1 1 0 011 1v11H2V6a1 1 0 011-1zm-1 13h20v2H2v-2z" />
+              </svg>
+              <span>Online / Offline</span>
+            </div>
+          </div>
           <a href="./courses/digital-media-course.html" class="block w-full mt-auto">
             <button
               class="w-full bg-gradient-to-r from-purple-400 to-pink-500 text-white px-4 py-2 rounded-lg font-semibold hover:from-pink-500 hover:to-purple-400 transition-all">
-              Learn More
+              View More
             </button>
           </a>
         </div>
@@ -484,15 +425,14 @@
   </section>
 
   <!-- Partner With Us Section -->
-  <section id="partners" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
+  <section id="partners" class="py-24 px-4 sm:px-6 lg:px-8 bg-slate-900/50">
     <div class="max-w-7xl mx-auto">
-      <!-- Header -->
       <div class="mb-16 animate-fade-in-up flex flex-col items-center align-center text-center">
         <h2 class="text-4xl md:text-5xl font-bold mb-4">
           Partner With <span class="gradient-text">Insight Technology</span>
         </h2>
         <p class="text-xl text-gray-300 max-w-2xl">
-          <span class="font-semibold">Empowering Growth. Building Futures. Together.</span>
+          <span class="font-semibold">Empowering growth and building futures together</span>
         </p>
         <p class="text-gray-400 mt-4 max-w-3xl leading-relaxed">
           At Insight Technology, we believe collaboration drives innovation.
@@ -505,7 +445,7 @@
 
       <div class="grid md:grid-cols-3 gap-8 mb-12">
 
-        <div class="glow-border p-8 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 stagger-2">
+        <div class="glow-border p-8 rounded-xl bg-gradient-to-br  stagger-2">
           <div class="flex justify-center mb-6">
             <img src="./assets/images/rr.png" alt="Digital Media Partnership"
               class="w-[100%] h-36 object-cover rounded-lg shadow-md" />
@@ -524,7 +464,7 @@
         </div>
 
 
-        <div class="glow-border p-8 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 stagger-1">
+        <div class="glow-border p-8 rounded-xl bg-gradient-to-br  stagger-1">
           <div class="flex justify-center mb-6">
             <img src="./assets/images/Gemini_Generated_Image_tis058tis058tis0.png" alt="Training Partnership"
               class="w-[100%] h-36 object-cover rounded-lg shadow-md" />
@@ -542,14 +482,12 @@
           </p>
         </div>
 
-
-        <!-- Placement Partnerships -->
-        <div class="glow-border p-8 rounded-xl bg-gradient-to-br from-slate-900 to-slate-800 stagger-3">
+        <div class="glow-border p-8 rounded-xl bg-gradient-to-br stagger-3">
           <div class="flex justify-center mb-6">
             <img src="./assets/images/dd.png" alt="Placement Partnership"
               class="w-[100%] h-36 object-cover rounded-lg shadow-md" />
           </div>
-          <h3 class="text-2xl font-bold mb-3">Placement Partnerships</h3>
+          <h3 class="text-2xl font-bold mb-3">Innovation Partnerships</h3>
           <p class="text-gray-300 font-semibold mb-4">
             Your Next Skilled Resource Awaits
           </p>
@@ -562,8 +500,6 @@
           </p>
         </div>
       </div>
-
-      <!-- CTA Button -->
       <div class="text-center animate-fade-in-up stagger-4">
         <a href="#contact">
           <button class="px-8 py-3 bg-yellow-500  rounded-lg font-semibold transition-smooth transform hover:scale-105">
@@ -578,12 +514,12 @@
   <!-- Collaboration Section -->
   <section id="collaboration"
     class="relative py-20 px-4 sm:px-6 lg:px-8 bg-cover bg-center bg-no-repeat flex items-center justify-center" style="
-        background-image: linear-gradient(
-            rgba(15, 23, 42, 0.7),
-            rgba(15, 23, 42, 0.7)
-          ),
-          url('./assets/images/bg-img.png');
-      ">
+    background-image: linear-gradient(
+        rgba(15, 23, 42, 0.7),
+        rgba(15, 23, 42, 0.7)
+      ),
+      url('./assets/images/bg-img.png');
+  ">
     <div class="max-w-4xl mx-auto text-center space-y-8 text-gray-300">
       <h2 class="text-4xl md:text-5xl font-bold">
         Let's <span class="gradient-text">Collaborate!</span>
@@ -596,168 +532,180 @@
 
       <div class="space-y-4 text-lg">
         <p>
-          🎓
+          <i class="fa-solid fa-graduation-cap text-yellow-400 mr-2"></i>
           <span class="font-semibold">Educational Institutions:</span> Enhance
           your curriculum with industry-relevant training
         </p>
         <p>
-          🏢 <span class="font-semibold">Corporate Firms:</span> Upskill your
+          <i class="fa-solid fa-building text-yellow-400 mr-2"></i>
+          <span class="font-semibold">Corporate Firms:</span> Upskill your
           workforce with cutting-edge technology programs
         </p>
         <p>
-          🎨 <span class="font-semibold">Creative Studios:</span> Collaborate
-          on innovative digital media projects
+          <i class="fa-solid fa-palette text-yellow-400 mr-2"></i>
+          <span class="font-semibold">Creative Studios:</span> Collaborate on
+          innovative digital media projects
         </p>
       </div>
 
       <p class="text-xl leading-relaxed font-semibold">
-        Contact us today to explore partnership opportunities and grow
-        together with QBix AI coding labs.
+        Contact us today to explore partnership opportunities and grow together
+        with QBix AI coding labs.
       </p>
 
       <a href="#contact">
         <button
-          class="px-8 mt-5 py-3 bg-yellow-500  rounded-lg font-semibold transition-smooth transform hover:scale-105">
+          class="px-8 mt-5 py-3 bg-yellow-500 rounded-lg font-semibold transition-transform transform hover:scale-105">
           Get In Touch
         </button>
       </a>
     </div>
   </section>
 
+
   <!-- Contact Form Section -->
-  <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-yellow-950/10">
-    <div class="max-w-7xl mx-auto">
-      <h2 class="text-4xl md:text-5xl font-bold text-center mb-10">
-        Get In Touch
-      </h2>
 
-      <div class="grid md:grid-cols-2 items-center gap-12 mt-5">
-        <!-- Contact Form -->
-        <div class="animate-slide-in-left">
-          <form id="contactForm" class="space-y-6">
+  <section
+  id="contact"
+  class="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-yellow-950/10 overflow-hidden"
+>
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-10">Get In Touch</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 items-start gap-10 md:gap-12 mt-5">
+      <!-- Left Side: Contact Form -->
+      <div class="animate-slide-in-left">
+        <form id="contactForm" class="space-y-6">
+          <div>
+            <label class="block text-sm font-semibold mb-2">Full Name</label>
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/30 transition-all"
+              required
+            />
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div>
-              <label class="block text-sm font-semibold mb-2">Full Name</label>
-              <input type="text" placeholder="Your Name"
+              <label class="block text-sm font-semibold mb-2">Email</label>
+              <input
+                type="email"
+                placeholder="your@email.com"
                 class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/30 transition-all"
-                required />
-            </div>
-
-            <!-- Email and Phone in same row -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label class="block text-sm font-semibold mb-2">Email</label>
-                <input type="email" placeholder="your@email.com"
-                  class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/30 transition-all"
-                  required />
-              </div>
-
-              <div>
-                <label class="block text-sm font-semibold mb-2">Phone</label>
-                <input type="tel" placeholder="+1 (555) 000-0000"
-                  class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/30 transition-all"
-                  required />
-              </div>
+                required
+              />
             </div>
 
             <div>
-              <label class="block text-sm font-semibold mb-2">Message</label>
-              <textarea placeholder="Your message here..." rows="5"
-                class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/30 transition-all resize-none"
-                required></textarea>
+              <label class="block text-sm font-semibold mb-2">Phone</label>
+              <input
+                type="tel"
+                placeholder="+1 (555) 000-0000"
+                class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/30 transition-all"
+                required
+              />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-semibold mb-2">Message</label>
+            <textarea
+              placeholder="Your message here..."
+              rows="5"
+              class="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/30 transition-all resize-none"
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full px-6 py-3 rounded-lg text-white font-semibold bg-yellow-500 hover:bg-yellow-600 transition-colors"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Right Side: Contact Info -->
+      <div class="animate-slide-in-right space-y-8">
+        <div class="p-6 sm:p-8 rounded-lg bg-white/5 border border-white/10">
+          <h3 class="text-2xl font-bold mb-6 text-yellow-400">
+            Contact Information
+          </h3>
+
+          <div class="space-y-6">
+            <!-- Address -->
+            <div class="flex items-start gap-4">
+              <div
+                class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fa-solid fa-location-dot text-yellow-400 text-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1">Address</h4>
+                <p class="text-gray-400 text-sm sm:text-base">
+                  123 Tech Street, Innovation Hub<br />Silicon Valley, CA 94025
+                </p>
+              </div>
             </div>
 
-            <button type="submit"
-              class="w-full px-6 py-3 rounded-lg text-white font-semibold bg-yellow-500  transition-colors">
-              Send Message
-            </button>
-          </form>
-        </div>
-
-        <!-- Address Section -->
-        <div class="animate-slide-in-right space-y-8">
-          <div class="p-8 rounded-lg bg-white/5 border border-white/10">
-            <h3 class="text-2xl font-bold mb-4 text-yellow-400">
-              Contact Information
-            </h3>
-
-            <div class="space-y-6">
-              <div class="flex gap-4">
-                <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-semibold mb-1">Address</h4>
-                  <p class="text-gray-400">
-                    123 Tech Street, Innovation Hub<br />Silicon Valley, CA
-                    94025
-                  </p>
-                </div>
+            <!-- Phone -->
+            <div class="flex items-start gap-4">
+              <div
+                class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fa-solid fa-phone text-yellow-400 text-lg"></i>
               </div>
-
-              <div class="flex gap-4">
-                <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773c.26.559.738 1.382 1.742 2.386 1.004 1.004 1.827 1.482 2.386 1.742l.773-1.548a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 4 14.18 4 9.5V5a1 1 0 011-1h2z">
-                    </path>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-semibold mb-1">Phone</h4>
-                  <p class="text-gray-400">
-                    +1 (555) 123-4567<br />+1 (555) 987-6543
-                  </p>
-                </div>
+              <div>
+                <h4 class="font-semibold mb-1">Phone</h4>
+                <p class="text-gray-400 text-sm sm:text-base">
+                  +1 (555) 123-4567<br />+1 (555) 987-6543
+                </p>
               </div>
+            </div>
 
-              <div class="flex gap-4">
-                <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-semibold mb-1">Email</h4>
-                  <p class="text-gray-400">
-                    info@QBix.com<br />support@QBixtechnology.com
-                  </p>
-                </div>
+            <!-- Email -->
+            <div class="flex items-start gap-4">
+              <div
+                class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fa-solid fa-envelope text-yellow-400 text-lg"></i>
               </div>
+              <div>
+                <h4 class="font-semibold mb-1">Email</h4>
+                <p class="text-gray-400 text-sm sm:text-base">
+                  info@QBix.com<br />support@QBixtechnology.com
+                </p>
+              </div>
+            </div>
 
-              <div class="flex gap-4">
-                <div class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-semibold mb-1">Business Hours</h4>
-                  <p class="text-gray-400">
-                    Monday - Friday: 9:00 AM - 6:00 PM<br />Saturday: 10:00 AM
-                    - 4:00 PM<br />Sunday: Closed
-                  </p>
-                </div>
+            <!-- Business Hours -->
+            <div class="flex items-start gap-4">
+              <div
+                class="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fa-solid fa-clock text-yellow-400 text-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-1">Business Hours</h4>
+                <p class="text-gray-400 text-sm sm:text-base">
+                  Mon - Fri: 9 AM - 6 PM<br />Sat: 10 AM - 4 PM<br />Sunday:
+                  Closed
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer - REDESIGNED -->
+  <!-- Footer -->
   <footer class="bg-slate-950 border-t border-yellow-500/20 pt-12 px-4 sm:px-6 lg:px-8">
     <div class="max-w-7xl mx-auto">
-      <!-- Main Footer Content -->
       <div class="grid md:grid-cols-4 gap-12 mb-12">
-        <!-- Brand Section -->
         <div class="space-y-4">
           <div class="flex items-center gap-2 mb-4">
             <img src="./assets/images/QBix_AICODINGLABS__ver_2_1-removebg-preview.png" class="w-[40%]" />
@@ -768,8 +716,6 @@
           </p>
 
         </div>
-
-        <!-- Quick Links -->
         <div>
           <h4 class="font-bold text-lg mb-6 text-white">Quick Links</h4>
           <ul class="space-y-3 text-gray-300 text-sm">
@@ -794,13 +740,11 @@
             <li>
               <a href="#partners" class="hover:text-yellow-400 transition-colors flex items-center gap-2">
                 <span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>
-                Partners
+                Partner Us
               </a>
             </li>
           </ul>
         </div>
-
-        <!-- Partnerships -->
         <div>
           <h4 class="font-bold text-lg mb-6 text-white">Partnerships</h4>
           <ul class="space-y-3 text-gray-300 text-sm">
@@ -819,13 +763,12 @@
             <li>
               <a href="#partners" class="hover:text-yellow-400 transition-colors flex items-center gap-2">
                 <span class="w-1.5 h-1.5 bg-yellow-400 rounded-full"></span>
-                Placement
+                Innovation
               </a>
             </li>
           </ul>
         </div>
 
-        <!-- Contact Info -->
         <div>
           <h4 class="font-bold text-lg mb-6 text-white">Get In Touch</h4>
           <ul class="space-y-4 text-gray-300 text-sm">
@@ -853,7 +796,7 @@
               <span>Tech Hub, Silicon Valley</span>
             </li>
           </ul>
-          <!-- Social Icons -->
+
           <div class="flex gap-3 pt-4">
             <a href="#"
               class="w-10 h-10 bg-gradient-to-br from-yellow-500/30 to-yellow-600/30 rounded-lg flex items-center justify-center hover:from-yellow-500/50 hover:to-yellow-600/50 transition-all transform hover:scale-110">
@@ -882,8 +825,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Bottom Footer -->
       <div class="py-5 border-t border-yellow-500/20  flex flex-col md:flex-row justify-between items-center gap-4">
         <p class="text-gray-400 text-sm text-center md:text-left">
           &copy; 2025 QBix AI coding labs. All rights reserved.
@@ -891,13 +832,12 @@
         <div class="flex gap-6 text-gray-400 text-sm">
           <a href="#" class="hover:text-yellow-400 transition-colors">Privacy Policy</a>
           <a href="#" class="hover:text-yellow-400 transition-colors">Terms of Service</a>
-          <a href="#" class="hover:text-yellow-400 transition-colors">Cookie Policy</a>
+          <a href="#" class="hover:text-yellow-400 transition-colors"></a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Add JS at the bottom before </body> -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
